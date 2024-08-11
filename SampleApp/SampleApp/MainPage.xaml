@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SampleApp.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <Entry
+                WidthRequest="200"
+                Placeholder="Page Number"
+                x:Name="PageNumber"></Entry>
+            <Button 
+                WidthRequest="200"
+                HeightRequest="60" 
+                Text="new windows"
+                x:Name="NewWindowsBtn"
+                Clicked="NewWindowsBtn_Clicked"></Button>
+            <Button 
+                WidthRequest="200"
+                HeightRequest="60" 
+                Text="Close all windows"
+                x:Name="CloseWindowsBtn"
+                Clicked="CloseWindowsBtn_Clicked"></Button>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
