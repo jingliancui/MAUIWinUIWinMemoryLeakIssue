@@ -11,7 +11,14 @@
         {
             for (int i = 0; i < int.Parse(PageNumber.Text); i++)
             {
-                Application.Current?.OpenWindow(new Window(new WebPage()));
+                try
+                {
+                    Application.Current?.OpenWindow(new Window(new WebPage()));
+                }
+                catch (Exception)
+                {
+
+                }
             }
         }
 
